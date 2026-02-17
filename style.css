@@ -1,0 +1,170 @@
+#startButton, #continueButton, #nextButton, #revealButton, #doneButton, #replayButton, #restartButton {
+  background-color: #566cd6; 
+    color: white;
+    padding: 15px 32px; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-size: 16px;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight: 700;
+    display: block;
+    margin: 20px auto;
+    transition: background-color 0.3s ease;
+}
+
+#startButton:hover, #continueButton:hover, #nextButton:hover, #revealButton:hover, #doneButton:hover, #replayButton:hover, #restartButton:hover {
+  background-color: #4558b8;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+#tutorial1, #tutorial2, #tutorial3 {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border-left: 4px solid #566cd6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+label {
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+label input[type="checkbox"] {
+  margin: 0;
+  cursor: pointer;
+}
+
+#Players {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto 20px auto;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px solid #566cd6;
+  border-radius: 8px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  text-align-last: center;
+}
+
+#Players option {
+  text-align: center;
+}
+
+#Players:hover {
+  border-color: #4558b8;
+  box-shadow: 0 2px 4px rgba(86, 108, 214, 0.2);
+}
+
+#Players:focus {
+  outline: none;
+  border-color: #4558b8;
+  box-shadow: 0 0 0 3px rgba(86, 108, 214, 0.1);
+}
+
+#playersLabel {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+#playerAssignments {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid #566cd6;
+  text-align: center;
+}
+
+#playerAssignments h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.player-card {
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 8px;
+  border: 2px solid #566cd6;
+  font-size: 16px;
+  color: #333;
+  min-height: 50px;
+  max-width: 500px;
+}
+
+.player-card.imposter {
+  border-color: #dc3545;
+  background-color: #fff5f5;
+}
+
+.player-card strong {
+  color: #566cd6;
+  font-weight: 600;
+}
+
+.player-card.imposter strong {
+  color: #dc3545;
+}
+
+
+#gameEndOptions {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid #566cd6;
+  text-align: center;
+}
+
+#gameEndOptions h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 1.8em;
+}
+
+#replayButton, #restartButton {
+  margin: 10px auto;
+  display: block;
+}

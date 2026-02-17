@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Web Page</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Imposter Game</h1>
+  <p id="tutorial1">Choose the amount of players to play; minimum is 3 players. 1 imposter will be randomly chosen while the normal people will be given a word.</p>
+  <p id="tutorial2">The goal of the imposter is to blend in with the normal people.</p>
+  <p id="tutorial3">The goal of the normal people is to stay vague but let the other normal people know you aren't the imposter without being too obvious on what the word is.</p>
+  <button id="startButton">Start Game</button>
+  <label id="famousCitiesLabel">
+    <input type="checkbox" id="famousCitiesCheck"> Famous Cities
+  </label>
+  <label id="technologicalItemsLabel">
+    <input type="checkbox" id="technologicalItemsCheck"> Technological Items
+  </label>
+  <label id="foodItemsLabel">
+    <input type="checkbox" id="foodItemsCheck"> Food Items
+  </label>
+  <label id="clothingItemsLabel">
+    <input type="checkbox" id="clothingItemsCheck"> Clothing Items
+  </label>
+  <button id="continueButton">Continue</button>
+  <label id="playersLabel" for="Players">Choose the amount of people playing</label>
+  <select id="Players">
+    <option value="None"></option>
+    <option value="Three">Three</option>
+    <option value="Four">Four</option>
+    <option value="Five">Five</option>
+    <option value="Six">Six</option>
+    <option value="Seven">Seven</option>
+    <option value="Eight">Eight</option>
+    <option value="Nine">Nine</option>
+    <option value="Ten">Ten</option>
+  </select>
+  <button id="nextButton">Continue</button>
+  <div id="playerAssignments" style="display: none;">
+    <h2>Player Assignments</h2>
+    <div id="playerCard"></div>
+    <button id="revealButton">reveal</button>
+    <button id="doneButton" style="display: none;">Done</button>
+  </div>
+  <div id="gameEndOptions" style="display: none;">
+    <h2>Game Complete!</h2>
+    <button id="replayButton">Play Again (Same Settings)</button>
+    <button id="restartButton">Back to Start</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
