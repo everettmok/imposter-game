@@ -4,6 +4,8 @@ const tutorial1 = document.getElementById('tutorial1');
 const tutorial2 = document.getElementById('tutorial2');
 const tutorial3 = document.getElementById('tutorial3');
 const startButton = document.getElementById('startButton');
+const catagoryLabels = document.getElementById('CatagoryLabelsTitle')
+const clueLabel = document.getElementById('ClueLabelTitle')
 const famousCitiesCheckbox = document.getElementById("famousCitiesCheck");
 const technologicalItemsCheckbox = document.getElementById("technologicalItemsCheck");
 const foodItemsCheckbox = document.getElementById("foodItemsCheck");
@@ -13,7 +15,7 @@ const famousCitiesLabel = document.getElementById("famousCitiesLabel");
 const technologicalItemsLabel = document.getElementById("technologicalItemsLabel");
 const foodItemsLabel = document.getElementById("foodItemsLabel");
 const clothingItemsLabel = document.getElementById("clothingItemsLabel");
-const clueLabel = document.getElementById("imposterClueLabel")
+const imposterClueLabel = document.getElementById("imposterClueLabel")
 const continueButton = document.getElementById("continueButton");
 const playerDropdown = document.getElementById("Players");
 const playersLabel = document.getElementById("playersLabel");
@@ -26,11 +28,13 @@ const replayButton = document.getElementById("replayButton");
 const restartButton = document.getElementById("restartButton");
 const playerAssignments = document.getElementById("playerAssignments");
 
+if (catagoryLabels) catagoryLabels.style.display = 'none'
+if (clueLabel) clueLabel.style.display = 'none'
 if (famousCitiesLabel) famousCitiesLabel.style.display = 'none';
 if (technologicalItemsLabel) technologicalItemsLabel.style.display = 'none';
 if (foodItemsLabel) foodItemsLabel.style.display = 'none';
 if (clothingItemsLabel) clothingItemsLabel.style.display = 'none';
-if (clueLabel) clueLabel.style.display = 'none';
+if (imposterClueLabel) imposterClueLabel.style.display = 'none';
 if (continueButton) continueButton.style.display = 'none';
 if (playerDropdown) playerDropdown.style.display = 'none';
 if (playersLabel) playersLabel.style.display = 'none';
@@ -126,11 +130,13 @@ function startGame() {
 if (startButton) {
   startButton.addEventListener("click", function (event) {
     startGame()
+    if (catagoryLabels) catagoryLabels.style.display = 'block'
+    if (clueLabel) clueLabel.style.display = 'block'
     if (famousCitiesLabel) famousCitiesLabel.style.display = 'flex';
     if (technologicalItemsLabel) technologicalItemsLabel.style.display = 'flex';
     if (foodItemsLabel) foodItemsLabel.style.display = 'flex';
     if (clothingItemsLabel) clothingItemsLabel.style.display = 'flex';
-    if (clueLabel) clueLabel.style.display = 'flex';
+    if (imposterClueLabel) imposterClueLabel.style.display = 'flex';
     if (continueButton) continueButton.style.display = 'block';
   });
 }
@@ -174,7 +180,7 @@ function continueGame() {
       if (technologicalItemsLabel) technologicalItemsLabel.style.display = 'none';
       if (foodItemsLabel) foodItemsLabel.style.display = 'none';
       if (clothingItemsLabel) clothingItemsLabel.style.display = 'none';
-      if (clueLabel) clueLabel.style.display = 'none';
+      if (imposterClueLabel) imposterClueLabel.style.display = 'none';
       if (continueButton) continueButton.style.display = 'none';
       if (playersLabel) playersLabel.style.display = 'block';
       if (playerDropdown) playerDropdown.style.display = 'block';
@@ -609,10 +615,13 @@ function restartGame() {
   if (tutorial2) tutorial2.style.display = 'block';
   if (tutorial3) tutorial3.style.display = 'block';
   if (startButton) startButton.style.display = 'block';
+  if (catagoryLabels) catagoryLabels.style.display = 'none'
+  if (clueLabel) clueLabel.style.display = 'none'
   if (famousCitiesLabel) famousCitiesLabel.style.display = 'none';
   if (technologicalItemsLabel) technologicalItemsLabel.style.display = 'none';
   if (foodItemsLabel) foodItemsLabel.style.display = 'none';
   if (clothingItemsLabel) clothingItemsLabel.style.display = 'none';
+  if (imposterClueLabel) imposterClueLabel.style.display = 'none';
   if (continueButton) continueButton.style.display = 'none';
   if (playerDropdown) playerDropdown.style.display = 'none';
   if (playersLabel) playersLabel.style.display = 'none';
