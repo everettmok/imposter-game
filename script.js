@@ -185,6 +185,8 @@ function continueGame() {
       if (playersLabel) playersLabel.style.display = 'block';
       if (playerDropdown) playerDropdown.style.display = 'block';
       if (nextButton) nextButton.style.display = 'block';
+      if (catagoryLabels) catagoryLabels.style.display = 'none'
+      if (clueLabel) clueLabel.style.display = 'none'
   }
 }
 
